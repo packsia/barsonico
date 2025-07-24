@@ -15,8 +15,8 @@ let sonicomanImage = sonicomanIdle;
 let runner = {
   x: 50,
   y: 220,
-  width: 40,
-  height: 60,
+  width: 80,
+  height: 80,
   velocityY: 0,
   jumping: false
 };
@@ -50,7 +50,7 @@ function drawRunner() {
 }
 
 function update() {
-  if (gameOver || !gameStarted) return;
+  if (!gameStarted || gameOver) return;
   runner.velocityY += gravity;
   runner.y += runner.velocityY;
   if (runner.y >= 220) {
