@@ -9,4 +9,17 @@ canvas {
   margin: auto;
   background-color: transparent;
 }
+#startButton, #jumpButton {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 2px solid #800;
+  color: #800;
+  cursor: pointer;
+}
 
